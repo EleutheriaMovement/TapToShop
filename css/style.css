@@ -4,7 +4,10 @@
  @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
  @import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 /*--------------------------------------------------------------------- basic ---------------------------------------------------------------------*/
- body {
+*{
+     scroll-behavior: smooth;
+} 
+body {
      color: #666666;
      font-size: 14px;
      font-family: 'poppins', sans-serif;
@@ -287,11 +290,19 @@
      color: #eaeaea;
      font-weight: 400;
      float: left;
+   text-transform: uppercase;
 }
  .right_header_info ul li a {
      color: #eaeaea;
      font-weight: 300;
+     transition: 0.5s;
 }
+
+.right_header_info ul li a:hover {
+     border-bottom: 2px solid #e3d105;
+     
+}
+
  .button_user a {
      float: left;
      min-width: 75px;
@@ -932,7 +943,12 @@
      color: #fff;
      font-weight: 500;
 }
-.about{
+.devider{
+     background-color: #578ee6ff;
+     min-height: 2vh;
+     max-width: 100%;
+}
+ .about{
      font-size: 1rem ; 
 }
 .socials a{   
@@ -947,4 +963,15 @@
 .socials a:hover{
      background-color: #e3d105;
     
+}
+
+.menubar{
+     display:none;
+}
+.col-md-8{
+     display: none;
+}
+#menu{
+     min-height: 60vh;
+     background-color: #fff;
 }
