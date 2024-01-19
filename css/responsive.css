@@ -143,6 +143,46 @@
         padding: 55px 30px;
     }
 }
+
+@media (max-width: 768px) {
+    .slide-container {
+      flex-direction: column;
+      padding: 0;
+      padding-top: 90px;
+      padding-bottom: 0px;
+    }
+
+    h3 {
+      font-size: 20px;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+      padding-top: 90px;
+    }
+
+    .slide-info {
+      padding: 10px;
+      padding-top: 0px;
+    }
+
+    .columns {
+      flex-direction: column;
+    }
+
+    .column {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+
+    .faq-container {
+      max-width: 100%;
+    }
+  }
+
  @media (min-width: 576px) and (max-width: 767px) {
     .col-md-3 .full{
         display: inline-block;
@@ -311,11 +351,11 @@
         max-width: 100%;
     }.slider_cont h3 {
         font-size: 20px;
-         line-height: 45px;
+        line-height: 45px;
     }
      .slider_cont p {
         margin-top: 8px;
-         margin-bottom: 5px
+         margin-bottom: 5px;
     }
      #main_slider a.carousel-control-prev {
         top: 40%;
@@ -404,5 +444,9 @@
      .yellow_bg {
         margin-top: 163px;
     }
+    h1 {
+        font-size: 25px;
+        color: #000;
+   }
 }
  

@@ -31,115 +31,21 @@
 
     <style>
         body {
-            margin: 0;
             font-family: Arial, sans-serif;
-            overflow-x: hidden;
-        }
-
-        .section {
-            position: relative;
-            height: 100vh;
-            width: 100%;
-            overflow: hidden;
-            background-color: transparent;
+            margin: 0;
+            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column;
-        }
-
-        .navbar a {
-            text-decoration: none;
-            font-size: 30px;
-            margin-left: 20px;
-            padding-left: 20px;
-            color: #000;
-            margin-top: 20px;
-            padding-top: 20px;
-        }
-
-        .navbar a:hover {
-
-            color: rgb(237, 155, 32);
-        }
-
-        .scroll-content {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            white-space: nowrap;
-            animation: scroll 30s linear infinite;
-
-        }
-
-        .item {
-            font-size: 2em;
-            margin: 0 20px;
-            height: 390px;
-            width: 280px;
-            margin-right: 20px;
-            margin-left: 10px;
-            padding-right: 20px;
-            padding-left: 10px;
-            transition: 0.5s ease-in-out;
-            box-shadow: 5px 5px 5px 5px #ec5;
-
-        }
-
-        .item img {
-            height: 300px;
-            width: 250px;
-            margin-top: 5px;
-            padding-top: 5px;
-        }
-
-        .item .info {
-            position: relative;
-            justify-content: center;
-            align-items: center;
-            display: flex;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            background-color: #ec5;
-            min-width: 100%;
-            height: 120px;
-            transition: 0.8s;
-            color: #6d7fcc;
-
-        }
-        .item .info p{
-            display: none;
-        }
-        .item:hover .info p{
-            display: block;
-            color: #6d7fcc;
-            font-size: 1.2rem;
-        }
-
-        .item:hover .info {
-            display: block;
-            transform: translateY(-50px);
-       
-
-        }
-
-        h1 {
-            font-size: 50px;
-        }
-
-        @keyframes active {
-            from {
-                transform: translateX(100%);
-            }
-
-            to {
-                transform: translateX(-100%);
-            }
+            height: 100%;
+            background-color: #578ee6ff;
         }
     </style>
+
 </head>
 <!-- body -->
 
-<body class="main-layout">
+<body class="main-layout about_page">
     <!-- loader  -->
     <div class="loader_bg">
         <div class="loader"><img src="images/loading.gif" alt="" /></div>
@@ -147,7 +53,6 @@
 
     <div class="wrapper">
         <!-- end loader -->
-
 
         <div class="sidebar">
             <!-- Sidebar  -->
@@ -163,13 +68,10 @@
                         <a href="index.html">Home</a>
                     </li>
                     <li>
-                        <a href="#menu">OUR MENU</a>
+                        <a href="about.html">About Us</a>
                     </li>
                     <li>
-                        <a href="#About_Us">About Us.</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact Us.</a>
+                        <a href="contact.html">Contact Us</a>
                     </li>
                 </ul>
 
@@ -181,11 +83,7 @@
             <header>
                 <div class="container-fluid">
                     <div class="row">
-                        <div>
-
-                        </div>
                         <div class="col-md-3">
-
                             <div class="full">
                                 <ul>
                                     <li><a class="logo" href="index.html"><img src="images/TAP2SHOP1.png" alt="#" /></a>
@@ -201,11 +99,9 @@
                             <div class="full">
                                 <div class="right_header_info">
                                     <ul>
-                                        <li><a href="#">Home</a></li>
-                                        <li><a href="#menu">OUR MENU</a></li>
-                                        <li><a href="#About_Us">About Us</a></li>
-                                        <li><a href="#contact">Contact Us</a></li>
-
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a href="contact.html">Contact Us</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -214,328 +110,210 @@
                 </div>
             </header>
             <!-- end header -->
-            <!-- start slider section -->
-            <div class="slider_section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="full">
-                                <div id="main_slider" class="carousel vert slide" data-ride="carousel"
-                                    data-interval="5000">
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <div class="row">
 
-                                                <div class="col-md-5">
-                                                    <div class="slider_cont">
-                                                        <h3>Get the Tap2Shop App and</h3>
-                                                        <h3>Discover Restaurants<br>That deliver near You</h3>
-                                                        <p>You can now order your favourite meal and drinks from all
-                                                            restaurants near you, and have it delivered within minutes`.
-                                                        </p>
-                                                        <p>Feed your Kasi Cravings in real time. we deliver in time and
-                                                            you get your food Hot. </p><br>
-                                                        <li class="button_user"><a class="button"
-                                                                href="http://tap2shop.co.za/Tap2Shop.apk">GET THE
-                                                                APP</a>
-                                                        </li>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-7">
-                                                    <div class="slider_image full text_align_center">
-                                                        <img class="img-responsive" src="images/burger_slide.png"
-                                                            alt="#" />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="carousel-item">
-                                            <div class="row">
-                                                <div class="col-md-5">
-                                                    <div class="slider_cont">
-                                                        <h3>Get the Tap2Shop Restaurant App<br>And meet the demand near
-                                                            you
-                                                        </h3>
-                                                        <p>Do not miss those who cannot get to you, be discovered
-                                                            through our platform and increase your sales.</p><br>
-                                                        <li class="button_user"><a class="button"
-                                                                href="http://tap2shop.co.za/Tap2ShopDrive.apk">GET THE
-                                                                APP</a>
-                                                        </li>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-7 full text_align_center">
-                                                    <div class="slider_image">
-                                                        <img class="img-responsive" src="images/burger_slide.png"
-                                                            alt="#" />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="carousel-item">
-                                            <div class="row">
-                                                <div class="col-md-5">
-                                                    <div class="slider_cont">
-                                                        <h3>Get the Tap2Shop Driver App<br>And meet the demand near
-                                                            you
-                                                        </h3>
-                                                        <p>Deliver To our Beloved Customers the fresh hot meals in time.
-                                                        </p><br>
-                                                        <li class="button_user"><a class="button"
-                                                                href="http://tap2shop.co.za/Tap2ShopDrive.apk">GET THE
-                                                                APP</a>
-                                                        </li>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-7 full text_align_center">
-                                                    <div class="slider_image">
-                                                        <img class="img-responsive" src="images/burger_slide.png"
-                                                            alt="#" />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <a class="carousel-control-prev" href="#main_slider" role="button"
-                                        data-slide="prev">
-                                        <i class="fa fa-angle-up"></i>
-                                    </a>
-                                    <a class="carousel-control-next" href="#main_slider" role="button"
-                                        data-slide="next">
-                                        <i class="fa fa-angle-down"></i>
-                                    </a>
+            <section>
+                <div class="slider-container">
+                    <div class="slider" id="slider">
+                        <!-- Slide 1 -->
+                        <div class="slide">
+                            <div class="slide-container">
+                                <!-- Image on the left -->
+                                <div class="slide-image">
+                                    <img src="images/menu.png" alt="Slide 1">
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- end slider section -->
 
-            <section id="menu">
-                <div class="container"></div>
-                <div class="section">
-                    <strong>
-                        <h1>Our Menu</h1>
-                    </strong><br><br>
-                    <div class="scroll-content">
-                        <div class="item">
-                            <img src="images/kota1.png" alt="">
-                            <div class="info">#1 Kota
-                                <p>R35.00</p>
-                            </div><br>
-                        </div>
-                        <div class="item">
-                            <img src="images/burger1.png" alt="">
-                            <div class="info">Burger
-                                <p>R50.00</p>
-                            </div><br>
-                        </div>
-                        <div class="item">
-                            <img src="images/kota.png" alt="">
-                            <div class="info">GTI Kota
-                                <p>R40.00</p>
-                            </div><br>
-                        </div>
-                        <div class="item">
-                            <img src="images/burger.png" alt="">
-                            <div class="info">Kasi Burger
-                                <p>R45.00</p>
-                            </div><br>
-                        </div>
-                        <div class="item">
-                            <img src="images/Skopo.jpg" alt="">
-                            <div class="info">Skopo
-                                <p>R120.00</p>
-                            </div><br>
-                        </div>
-                        <div class="item">
-                            <img src="images/nyama.jpg" alt="">
-                            <div class="info">Platter "Inyama"
-                                <p>R...</p>
-                            </div><br>
-                        </div>
-                    </div><br><br><br><br>
-                    <h1>Get the APP and Order your favorite meals. <a href="">DOWNLOAD APP!</a></h1>
-                </div>
-
-
-
-            </section>
-            <section class="devider"></section>
-            <!-- About 1 - Bootstrap Brain Component -->
-            <section class="py-3 py-md-5 py-xl-8" id="About_Us">
-                <div class="container">
-                    <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
-                        <div class="col-12 col-lg-6 col-xl-5">
-                            <img class="img-fluid rounded" loading="lazy" src="images/TAP2SHOP.jpg" alt="">
-                        </div>
-                        <div class="col-12 col-lg-6 col-xl-7">
-                            <div class="row justify-content-xl-center">
-                                <div class="col-12 col-xl-11">
-                                    <p>
-                                    <h1>Our Mission:</h1>
-                                    <p>
-                                        At Tap2Shop, we're on a mission to deliver traditional flavors to your doorstep,
-                                        celebrating local kitchens and bringing you unique culinary experiences.
-                                    </p>
-                                    <h1>What Sets Us Apart:</h1>
-                                    <p>
-                                        Tap2Shop goes beyond delivery; it's your access to hidden culinary gems,
-                                        delivering often-overlooked home-cooked delights.
-                                    </p>
-                                    <h1>Embracing Local Heroes:</h1>
-                                    <p>
-                                        We empower local chefs, supporting their culinary journey to enrich the vibrant
-                                        tapestry of local food culture.
-                                    </p>
-                                    <h1>The Tap2Shop Experience:</h1>
-                                    <p>
-                                        Every bite tells a story. We're committed to delivering an experience that
-                                        transcends boundaries and celebrates the power of good food.
-                                    </p>
-                                    <h1>Meet the Team:</h1>
-                                    <p>
-                                        Discover the passionate minds behind Tap2Shop—a diverse team dedicated to
-                                        connecting people through the universal language of flavor.
-                                    </p>
-                                    <h1> Join Us: </h1>
-                                    <p>
-                                        Whether you're a foodie or a local chef, Tap2Shop is where traditions are
-                                        celebrated, and every flavor tells a tale. Join us on this tasty adventure!
-                                    </p>
-                                    <h1>Connect With Us:</h1>
-                                    <p>
-                                        Download the app, connect on social media, and let's embark on a flavorful
-                                        journey together! <br><br>
-                                    <div class="socials">
-                                        <!-- Facebook -->
-                                        <a href=""><box-icon name='facebook' type='logo'></box-icon></a>
-
-                                        <!-- Twitter -->
-                                        <a href=""><box-icon type='logo' name='twitter'></box-icon></a>
-
-                                        <!-- Instagram -->
-                                        <a href=""><box-icon name='instagram' type='logo'></box-icon></a>
-
-                                        <!-- Linkedin -->
-                                        <a href=""><box-icon name='linkedin' type='logo'></box-icon></a>
-
-                                        <!-- Github -->
-                                        <a href=""><box-icon name='github' type='logo'></box-icon></a>
-
-                                        <!-- Whatsapp -->
-                                        <a href=""><box-icon name='whatsapp' type='logo'></box-icon></a>
-                                    </div>
-                                    </p>
-                                    <br>
-                                    <ul>
-                                        <li class="button_user"><a class="button active"
-                                                href="http://tap2shop.co.za/Tap2Shop.apk">DOWNLOAD Tap2Shop APP</a><a
-                                                class="button" href="http://tap2shop.co.za/Tap2ShopDrive.apk">DOWNLOAD
-                                                DRIVING APP</a>
+                                <!-- Information container on the right -->
+                                <div class="slide-info">
+                                    <div class="slide-content">
+                                        <h3>Get the Tap2Shop App and</h3>
+                                        <h3>Discover Restaurants<br>That deliver near You</h3>
+                                        <p>Now you can order your favorite meals and drinks from all restaurants near
+                                            you
+                                            and have them <br> delivered within minutes. Feed your Kasi
+                                            cravings in real-time – we deliver on time, ensuring your food arrives hot
+                                            and delicious. </p><br>
+                                        <li class="button_user"><a class="button"
+                                                href="http://tap2shop.co.za/Tap2Shop.apk">GET THE
+                                                APP</a>
                                         </li>
-                                    </ul>
-                                    </p>
-
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="slide">
+                            <div class="slide-container">
+                                <!-- Image on the left -->
+                                <div class="slide-image1">
+                                    <img src="images/driver.jpg" alt="Slide 2">
+                                </div>
+
+                                <!-- Information container on the right -->
+                                <div class="slide-info">
+                                    <div class="slide-content">
+                                        <h3>Get the Tap2Shop Driver App<br>And meet the demand near
+                                            you
+                                        </h3>
+                                        <p>Deliver To our Beloved Customers the fresh hot meals in time. <br>
+                                            Join Tap2Shop as a driver and start earning on your schedule.
+                                        </p><br>
+                                        <li class="button_user"><a class="button"
+                                                href="http://tap2shop.co.za/Tap2ShopDrive.apk">GET THE
+                                                APP</a>
+                                        </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide-container">
+                                <!-- Image on the left -->
+                                <div class="slide-image">
+                                    <img src="images/R.png" alt="Slide 2">
+                                </div>
+
+                                <!-- Information container on the right -->
+                                <div class="slide-info">
+                                    <div class="slide-content">
+                                        <h3>Get the Tap2Shop Restaurant App<br>And meet the demand near
+                                            you
+                                        </h3>
+                                        <p>Don't miss out on reaching those who can't come to you. Be discovered <br>
+                                            through our
+                                            platform and boost your sales. Join Tap2Shop and expand your reach!</p><br>
+                                        <li class="button_user"><a class="button"
+                                                href="http://tap2shop.co.za/Tap2ShopDrive.apk">GET THE
+                                                APP</a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Add more slides as needed -->
+
+                    </div><br><br>
+                    <div class="columns">
+                        <div class="column">
+                            <h2> 🚀 Tap2Shop: Your Food, Your Way! 🍔🛵</h2>
+
+                            Hungry? Craving your favorite meals? Download Tap2Shop now and order from a variety of
+                            restaurants near
+                            you. Quick, easy,
+                            and delivered to your doorstep. No more waiting, just great food at your fingertips. Tap,
+                            order, enjoy!
+                            <br>
+                            <ul><br>
+                                <li class="button_user"><a class="button" href="http://tap2shop.co.za/Tap2Shop.apk">GET
+                                        THE
+                                        APP</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <h2>🍕 Tap2Shop Restaurant Partner: Boost Your Business! 📈</h2>
+
+                            Increase your restaurant's reach and boost orders with Tap2Shop! Join our network of
+                            satisfied customers
+                            and get your delicious meals delivered to more hungry customers.
+                            Seamless integration, hassle-free delivery. Grow your business with Tap2Shop today! <br>
+                            <ul><br>
+                                <li class="button_user"><a class="button" href="http://tap2shop.co.za/Tap2Shop.apk">GET
+                                        THE
+                                        APP</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <h2>🚗 Tap2Shop Driver: Drive and Earn on Your Terms! 🌟</h2>
+
+                            Turn your car into a money-making machine! Join Tap2Shop as a driver and start earning on
+                            your schedule.
+                            Deliver food to hungry customers and make extra cash.
+                            Flexible hours, instant payouts. Be your own boss – sign up today and hit the road! <br>
+                            <ul>
+                                <br>
+                                <li class="button_user"><a class="button"
+                                        href="http://tap2shop.co.za/Tap2ShopDrive.apk">GET THE
+                                        APP</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="slide-buttons">
+                        <button onclick="prevSlide()">
+                            < </button>
+                                <button onclick="nextSlide()">></button>
+                    </div>
+                </div> <br><br>
+                <div class="faq-container">
+                    <h1>frequently Asked Questions</h1>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleAnswer(this)">Can i order from a store in my Kasi?
+                        </div>
+                        <div class="faq-answer">Yes, Tap2Shop caters for the fast-foods stores in the Kasis.</div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleAnswer(this)">Is the App free to use?</div>
+                        <div class="faq-answer">Yes, However it requires minimal mobile data for usage.</div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleAnswer(this)">Do i need to have an account before i
+                            order?</div>
+                        <div class="faq-answer">Yes, you need to have an account. Having an account is also beneficial
+                            for you, as
+                            we offer discounts to our loyal customers.</div>
                     </div>
                 </div>
+
             </section>
-
-
         </div>
 
 
         <!-- footer -->
-        <footer>
-
-            <div class="footer" id="contact">
+        <fooetr>
+            <div class="footer">
                 <div class="container-fluid">
+
                     <div class="row">
-                        <div class=" col-md-12">
-                            <h2>Request A<strong class="white"> Call Back</strong></h2>
-                        </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <div class="col-md-12">
+                            <div class="socials">
+                                <!-- Facebook -->
+                                <a href=""><box-icon name='facebook' type='logo'></box-icon></a>
 
-                            <form class="main_form">
-                                <div class="row">
+                                <!-- Twitter -->
+                                <a href=""><box-icon type='logo' name='twitter'></box-icon></a>
 
-                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                        <input class="form-control" placeholder="Name" type="text" name="Name">
-                                    </div>
-                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                        <input class="form-control" placeholder="Email" type="text" name="Email">
-                                    </div>
-                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                        <input class="form-control" placeholder="Phone" type="text" name="Phone">
-                                    </div>
-                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                        <textarea class="textarea" placeholder="Message" type="text"
-                                            name="Message"></textarea>
-                                    </div>
-                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                        <button class="send">Send</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                            <div class="img-box">
-                                <figure><img src="images/TAP2SHOP.png" alt="img" /></figure>
+                                <!-- Instagram -->
+                                <a href=""><box-icon name='instagram' type='logo'></box-icon></a>
+
+                                <!-- Linkedin -->
+                                <a href=""><box-icon name='linkedin' type='logo'></box-icon></a>
+
+                                <!-- Github -->
+                                <a href=""><box-icon name='github' type='logo'></box-icon></a>
+
+                                <!-- Whatsapp -->
+                                <a href=""><box-icon name='whatsapp' type='logo'></box-icon></a>
                             </div>
                         </div>
                     </div>
                 </div>
-        </footer>
-        <!-- end footer -->
-
-        <footer class="text-center text-lg-start bg-body-tertiary text-muted">
-            <!-- Section: Social media -->
-            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-                <!-- Left -->
-                <div class="me-5 d-none d-lg-block">
-                    <span>Get connected with us on social networks:</span>
+                <div class="copyright">
+                    <div class="container">
+                        <p>© 2023 All Rights Reserved. Design by<a href="https://html.design/"> Tap2Shop-KFM</a>
+                        </p>
+                    </div>
                 </div>
-                <!-- Left -->
 
-                <!-- Right -->
-                <div class="socials">
-                    <!-- Facebook -->
-                    <a href=""><box-icon name='facebook' type='logo'></box-icon></a>
-
-                    <!-- Twitter -->
-                    <a href=""><box-icon type='logo' name='twitter'></box-icon></a>
-
-                    <!-- Instagram -->
-                    <a href=""><box-icon name='instagram' type='logo'></box-icon></a>
-
-                    <!-- Linkedin -->
-                    <a href=""><box-icon name='linkedin' type='logo'></box-icon></a>
-
-                    <!-- Github -->
-                    <a href=""><box-icon name='github' type='logo'></box-icon></a>
-
-                    <!-- Whatsapp -->
-                    <a href=""><box-icon name='whatsapp' type='logo'></box-icon></a>
-                </div>
-                <!-- Right -->
-            </section>
-            <!-- Section: Social media -->
-
-            <!-- Section: Links  -->
-
-            <!-- Copyright -->
-            <div class="copyright">
-                <div class="container">
-                    <p>© 2023 All Rights Reserved. Design by<a href="#"> Pleroma Systems</a></p>
-                </div>
             </div>
-            <!-- Copyright -->
-        </footer>
-        <!-- Footer -->
+
+        </fooetr>
+        <!-- end footer -->
 
     </div>
     </div>
@@ -551,6 +329,48 @@
 
 
     <script src="js/jquery-3.0.0.min.js"></script>
+
+    <script>
+        function toggleAnswer(element) {
+            const faqAnswer = element.nextElementSibling;
+            element.classList.toggle('active');
+            faqAnswer.style.display = (faqAnswer.style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
+
+    <script>
+        const slider = document.getElementById('slider');
+        let currentIndex = 0;
+
+        function showSlide(index) {
+            const percentage = -index * 100;
+            slider.style.transform = `translateX(${percentage}vw)`;
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slider.children.length;
+            showSlide(currentIndex);
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + slider.children.length) % slider.children.length;
+            showSlide(currentIndex);
+        }
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'ArrowLeft') {
+                prevSlide();
+            } else if (event.key === 'ArrowRight') {
+                nextSlide();
+            }
+        });
+
+        setInterval(() => {
+            nextSlide();
+        }, 8000);
+        // Show the first slide initially
+        showSlide(currentIndex);
+    </script>
     <script type="text/javascript">
         $(document).ready(function () {
             $("#sidebar").mCustomScrollbar({
@@ -569,41 +389,6 @@
                 $('a[aria-expanded=true]').attr('aria-expanded', 'false');
             });
         });
-    </script>
-
-    <style>
-        #owl-demo .item {
-            margin: 3px;
-        }
-
-        #owl-demo .item img {
-            display: block;
-            width: 100%;
-            height: auto;
-        }
-    </style>
-
-
-    <script>
-        $(document).ready(function () {
-            var owl = $('.owl-carousel');
-            owl.owlCarousel({
-                margin: 10,
-                nav: true,
-                loop: true,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    600: {
-                        items: 2
-                    },
-                    1000: {
-                        items: 5
-                    }
-                }
-            })
-        })
     </script>
 
 </body>
